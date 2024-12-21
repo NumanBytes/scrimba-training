@@ -1,0 +1,27 @@
+body {
+    font-family: Inter;
+    background-color: #282D35;
+    color: #FFFFFF;
+    /* margin: 0; */
+}
+
+main {
+    padding: 50px 27px;
+}
+
+main > h1 {
+    /* padding: 50px 27px; */
+    font-weight: 700;
+    margin: 0;
+    font-size: 2.7rem;
+}
+
+main > ul {
+    /* padding: 46px 47px; */
+}
+
+main > ul > li {
+    font-weight: 400;
+    font-size: 1rem;
+    list-style: circle;
+}
