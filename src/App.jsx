@@ -1,13 +1,24 @@
-import logo from './logo.svg';
-// import './App.css';
-import Navbar from './components/Navbar';
-import Main from './components/Main';
+import './App.css';
+import Header from "./components/Header";
+import Entry from './components/Entry';
+import data from './data'
 
 function App() {
+  const entryElement = data.map((entry) => {
+    return (
+    <Entry
+      key={entry.id}
+      entry={entry}
+    />
+    )
+  })
+
   return (
     <div className="App">
-      <Navbar />
-      <Main />
+      <Header />
+      <main className='container'>
+        {entryElement}
+      </main>
     </div>
   );
 }

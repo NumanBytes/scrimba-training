@@ -17,11 +17,19 @@ main > h1 {
 }
 
 main > ul {
-    /* padding: 46px 47px; */
+    margin-top: 46px;
+    max-width: 400px;
+}
+
+main > ul > li::marker {
+    color: #61DAFB;
+    font-size: 1.2rem;
+
 }
 
 main > ul > li {
     font-weight: 400;
     font-size: 1rem;
+    padding-block: 10px;
     list-style: circle;
 }
